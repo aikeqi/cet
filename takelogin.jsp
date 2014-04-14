@@ -32,6 +32,8 @@
 			if(rs.next())
 			{
 				out.println("成功！");
+				session.setAttribute("username", username);
+				session.setAttribute("password", password);
 				response.sendRedirect("index.jsp");
 			}else{
 				out.println("失败");
