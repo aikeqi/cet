@@ -9,29 +9,31 @@
 
 <body>
 <center>
- <div id = "main">
- 	<table>
-    	<th colspan="2">CET在线模拟测试系统</th>
-        <tr>
-        	<td>用户名： </td>
-            <td>
-            	<input type="text" id="username" />
-            </td>
-        </tr>
-        <tr>
-        	<td>密 码： </td>
-            <td>
-            	<input type="password" id="password" />
-            </td>
-        </tr>
-        <tr>
-        	<td colspan="2" align="center">
-            <a href="register.jsp"><input type="button" value="注册" /></a>
-            <input type="submit" value="登陆" />
-            </td>
-        </tr>
-    </table>
- </div>
- </center>
+<div id = "main">
+    <form action="takelogin.jsp" mothod="post">
+     	<table>
+        	<th colspan="2">CET在线模拟测试系统</th>
+            <tr>
+            	<td>用户名： </td>
+                <td>
+                	<input type="text" id="username" name="username" />
+                </td>
+            </tr>
+            <tr>
+            	<td>密 码： </td>
+                <td>
+                	<input type="password" id="password" name="password" />
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="2" align="center">
+                <a href="register.jsp"><input type="button" value="注册" /></a>
+                <input type="submit" value="登陆" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</center>
 </body>
 </html>

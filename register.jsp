@@ -14,16 +14,16 @@
             	<th colspan="2">注册</th>
                 <tr>
                 	<td>用户名： </td>
-                    <td><input type="text"  id="username" /></td>
+                    <td><input type="text"  id="username" name="username" /></td>
                     <td>1-12位数字及字母</td>
                 </tr>
                 <tr>
                 	<td>密 码： </td>
-                    <td><input type="password" id="password1" /></td>
+                    <td><input type="password" id="password1" name="password1" /></td>
                 </tr>
                 <tr>
                 	<td>确认密码:</td>
-                    <td><input type="password" id="password2" /></td>
+                    <td><input type="password" id="password2" name="password2" /></td>
                 </tr>
                 <tr>
                 	<td colspan="2" align="center">
