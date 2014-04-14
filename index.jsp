@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -63,5 +64,21 @@
   </form>
   </div>
 </div>
+=======
+<%@ page contentType="text/html; charset=UTF-8" %>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CET在线模拟测试系统</title>
+</head>
+<body>
+<%
+if(session.getAttribute("username").equals(null)){
+   out.println("未登录");
+}else{
+   out.println(session.getAttribute("username"));
+}
+%>
+>>>>>>> origin/master
 </body>
 </html>

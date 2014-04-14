@@ -1,3 +1,1 @@
-<%
-	
-%>
+<jsp:include page="include/conn.jsp"/>
