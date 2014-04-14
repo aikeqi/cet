@@ -26,7 +26,7 @@
         </tr>
         <tr>
         	<td colspan="2" align="center">
-            <input type="button" value="注册" onclick="alert(123)" />
+            <a href="register.jsp"><input type="button" value="注册" /></a>
             <input type="submit" value="登陆" />
             </td>
         </tr>
