@@ -4,36 +4,33 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CET登录</title>
+<!-- 最新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
 
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<link href="css/login.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<center>
-<div id = "main">
-    <form action="takelogin.jsp" mothod="post">
-     	<table>
-        	<th colspan="2">CET在线模拟测试系统</th>
-            <tr>
-            	<td>用户名： </td>
-                <td>
-                	<input type="text" id="username" name="username" />
-                </td>
-            </tr>
-            <tr>
-            	<td>密 码： </td>
-                <td>
-                	<input type="password" id="password" name="password" />
-                </td>
-            </tr>
-            <tr>
-            	<td colspan="2" align="center">
-                <a href="register.jsp"><input type="button" value="注册" /></a>
-                <input type="submit" value="登陆" />
-                </td>
-            </tr>
-        </table>
-    </form>
-</div>
-</center>
+<div class="container">
+
+      <form action="takelogin.jsp" method="post" class="form-signin" role="form">
+        <h2 class="form-signin-heading">用户登录</h2>
+        <input name="username" type="text" class="form-control" placeholder="用户名" required autofocus>
+        <input name="password" type="password" class="form-control" placeholder="密码" required>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> 记住我
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
+      </form>
+
+    </div> <!-- /container -->
 </body>
 </html>
